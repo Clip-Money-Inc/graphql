@@ -107,6 +107,10 @@ type errors []struct {
 		Line   int
 		Column int
 	}
+	Operation string
+	Field     string
+	RequestID string `json:"request_id"`
+	Code      int
 }
 
 // Error implements error interface.
